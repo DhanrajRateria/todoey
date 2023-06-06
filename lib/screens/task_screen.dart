@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoey/widgets.dart/task_view.dart';
 
 class TasksScreen extends StatelessWidget {
   const TasksScreen({super.key});
@@ -48,6 +49,7 @@ class TasksScreen extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(20),
                       topRight: Radius.circular(20))),
+                      child: TaskList(),
             ),
           )
         ],
